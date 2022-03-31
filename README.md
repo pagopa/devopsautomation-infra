@@ -6,7 +6,7 @@ Terraform template repository for infrastructures projects
 
 ### Change the template name
 
-In this template we use `devopslab` or `dvopla` to define ours project, but you need to change all the information, to be complaint with your project
+In this template we use `devopsautomation` or `dvopla` to define ours project, but you need to change all the information, to be complaint with your project
 
 Inside:
 
@@ -28,16 +28,16 @@ tags = {
   CreatedBy   = "Terraform"
   Environment = "DEV"
   Owner       = "DevOps"
-  Source      = "https://github.com/pagopa/devopslab-infra"
+  Source      = "https://github.com/pagopa/devopsautomation-infra"
   CostCenter  = "TS310 - PAGAMENTI & SERVIZI"
 }
 ```
 
-And change all the occurency of `devopslab` of his prefix with yours prefix.
+And change all the occurency of `devopsautomation` of his prefix with yours prefix.
 
 In the folders core, pillar and k8s
 
-Change the occurrence `devopslab` with the name of your project or the name that is better for you.
+Change the occurrence `devopsautomation` with the name of your project or the name that is better for you.
 
 ### Terraform folders name convention
 

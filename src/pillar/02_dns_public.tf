@@ -39,7 +39,7 @@ resource "azurerm_dns_cname_record" "public_healthy" {
 
 # application gateway records
 # api.*.userregistry.pagopa.it
-resource "azurerm_dns_a_record" "api_devopslab_pagopa_it" {
+resource "azurerm_dns_a_record" "api_devopsautomation_pagopa_it" {
   name                = "api"
   zone_name           = azurerm_dns_zone.public.name
   resource_group_name = azurerm_resource_group.rg_vnet.name

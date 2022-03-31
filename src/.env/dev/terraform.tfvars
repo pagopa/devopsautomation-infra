@@ -9,7 +9,7 @@ tags = {
   CreatedBy   = "Terraform"
   Environment = "DEV"
   Owner       = "DevOps"
-  Source      = "https://github.com/pagopa/devopslab-infra"
+  Source      = "https://github.com/pagopa/devopsautomation-infra"
   CostCenter  = "TS310 - PAGAMENTI & SERVIZI"
 }
 
@@ -30,8 +30,8 @@ cidr_subnet_bastion    = ["10.1.138.0/24"]
 cidr_subnet_k8s        = ["10.1.0.0/17"]
 
 # dns
-prod_dns_zone_prefix = "devopslab"
-lab_dns_zone_prefix  = "lab.devopslab"
+prod_dns_zone_prefix = "devopsautomation"
+lab_dns_zone_prefix  = "lab.devopsautomation"
 external_domain      = "pagopa.it"
 
 # azure devops
@@ -43,7 +43,7 @@ app_gateway_sku_name             = "Standard_v2"
 app_gateway_sku_tier             = "Standard_v2"
 app_gateway_alerts_enabled       = false
 app_gateway_waf_enabled          = false
-app_gateway_api_certificate_name = "api-devopslab-pagopa-it"
+app_gateway_api_certificate_name = "api-devopsautomation-pagopa-it"
 
 # postgres
 postgres_private_endpoint_enabled      = false
@@ -60,9 +60,9 @@ postgres_network_rules = {
 #
 # 🗺 APIM
 #
-apim_publisher_name                = "PagoPA DevOpsLab LAB"
+apim_publisher_name                = "PagoPA devopsautomation LAB"
 apim_sku                           = "Developer_1"
-apim_api_internal_certificate_name = "api-internal-devopslab-pagopa-it"
+apim_api_internal_certificate_name = "api-internal-devopsautomation-pagopa-it"
 
 
 

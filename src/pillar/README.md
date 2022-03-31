@@ -1,22 +1,22 @@
 # Pillar
 
-## DNS setup devopslab.pagopa.it
+## DNS setup devopsautomation.pagopa.it
 
 ```bash
 az network dns zone show \
-  --name "devopslab.pagopa.it" \
+  --name "devopsautomation.pagopa.it" \
   --resource-group "dvopla-d-vnet-rg" \
-  --subscription "DevOpsLab" \
+  --subscription "devopsautomation" \
   --query nameServers
 ```
 
-## DNS Setup lab.devopslab.pagopa.it
+## DNS Setup lab.devopsautomation.pagopa.it
 
 ```bash
 az network dns zone show \
-  --name "lab.devopslab.pagopa.it" \
+  --name "lab.devopsautomation.pagopa.it" \
   --resource-group "dvopla-d-vnet-rg" \
-  --subscription "DevOpsLab" \
+  --subscription "devopsautomation" \
   --query nameServers
 ```
 
@@ -59,10 +59,10 @@ az network dns zone show \
 | [azurerm_log_analytics_workspace.log_analytics_workspace](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/log_analytics_workspace) | resource |
 | [azurerm_monitor_action_group.email](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/monitor_action_group) | resource |
 | [azurerm_monitor_action_group.slack](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/monitor_action_group) | resource |
-| [azurerm_private_dns_zone.internal_devopslab](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/private_dns_zone) | resource |
-| [azurerm_private_dns_zone.internal_lab_devopslab](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/private_dns_zone) | resource |
-| [azurerm_private_dns_zone_virtual_network_link.internal_devopslab_vnet](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/private_dns_zone_virtual_network_link) | resource |
-| [azurerm_private_dns_zone_virtual_network_link.internal_lab_devopslab_vnet](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/private_dns_zone_virtual_network_link) | resource |
+| [azurerm_private_dns_zone.internal_devopsautomation](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/private_dns_zone) | resource |
+| [azurerm_private_dns_zone.internal_lab_devopsautomation](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/private_dns_zone) | resource |
+| [azurerm_private_dns_zone_virtual_network_link.internal_devopsautomation_vnet](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/private_dns_zone_virtual_network_link) | resource |
+| [azurerm_private_dns_zone_virtual_network_link.internal_lab_devopsautomation_vnet](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/private_dns_zone_virtual_network_link) | resource |
 | [azurerm_public_ip.aks_outbound](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/public_ip) | resource |
 | [azurerm_public_ip.appgateway_public_ip](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/public_ip) | resource |
 | [azurerm_resource_group.azdo_rg](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/resource_group) | resource |

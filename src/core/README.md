@@ -21,8 +21,8 @@
 |------|--------|---------|
 | <a name="module_aks"></a> [aks](#module\_aks) | git::https://github.com/pagopa/azurerm.git//kubernetes_cluster | v2.0.3 |
 | <a name="module_apim"></a> [apim](#module\_apim) | git::https://github.com/pagopa/azurerm.git//api_management | v2.1.21 |
-| <a name="module_apim_devopslab_webapp_python_api_v1"></a> [apim\_devopslab\_webapp\_python\_api\_v1](#module\_apim\_devopslab\_webapp\_python\_api\_v1) | git::https://github.com/pagopa/azurerm.git//api_management_api | v1.0.90 |
-| <a name="module_apim_product_devopslab"></a> [apim\_product\_devopslab](#module\_apim\_product\_devopslab) | git::https://github.com/pagopa/azurerm.git//api_management_product | v1.0.90 |
+| <a name="module_apim_devopsautomation_webapp_python_api_v1"></a> [apim\_devopsautomation\_webapp\_python\_api\_v1](#module\_apim\_devopsautomation\_webapp\_python\_api\_v1) | git::https://github.com/pagopa/azurerm.git//api_management_api | v1.0.90 |
+| <a name="module_apim_product_devopsautomation"></a> [apim\_product\_devopsautomation](#module\_apim\_product\_devopsautomation) | git::https://github.com/pagopa/azurerm.git//api_management_product | v1.0.90 |
 | <a name="module_apim_snet"></a> [apim\_snet](#module\_apim\_snet) | git::https://github.com/pagopa/azurerm.git//subnet | v2.1.21 |
 | <a name="module_app_docker_snet"></a> [app\_docker\_snet](#module\_app\_docker\_snet) | git::https://github.com/pagopa/azurerm.git//subnet | v2.1.21 |
 | <a name="module_app_gw"></a> [app\_gw](#module\_app\_gw) | git::https://github.com/pagopa/azurerm.git//app_gateway | v2.1.21 |
@@ -35,7 +35,7 @@
 
 | Name | Type |
 |------|------|
-| [azurerm_api_management_api_version_set.apim_devopslab_webapp_python_api](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/api_management_api_version_set) | resource |
+| [azurerm_api_management_api_version_set.apim_devopsautomation_webapp_python_api](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/api_management_api_version_set) | resource |
 | [azurerm_api_management_custom_domain.api_custom_domain](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/api_management_custom_domain) | resource |
 | [azurerm_app_service_plan.app_docker](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/app_service_plan) | resource |
 | [azurerm_key_vault_access_policy.api_management_policy](https://registry.terraform.io/providers/hashicorp/azurerm/2.90.0/docs/resources/key_vault_access_policy) | resource |
