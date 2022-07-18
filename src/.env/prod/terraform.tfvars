@@ -1,7 +1,7 @@
 # general
 env_short      = "p"
 env            = "prod"
-prefix         = "dvopla"
+prefix         = "dvopau"
 location       = "northeurope"
 location_short = "neu"
 
@@ -16,8 +16,8 @@ tags = {
 lock_enable = false
 
 # 🔐 key vault
-key_vault_name    = "dvopla-d-neu-kv"
-key_vault_rg_name = "dvopla-d-sec-rg"
+key_vault_name    = "dvopau-p-neu-kv"
+key_vault_rg_name = "dvopau-p-sec-rg"
 
 # ☁️ networking
 cidr_vnet              = ["10.1.0.0/16"]

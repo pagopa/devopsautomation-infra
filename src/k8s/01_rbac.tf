@@ -19,7 +19,7 @@
 # }
 
 # locals {
-#   kubernetes_app_namespace = kubernetes_namespace.dvopla.metadata[0].name
+#   kubernetes_app_namespace = kubernetes_namespace.dvopau.metadata[0].name
 # }
 
 
