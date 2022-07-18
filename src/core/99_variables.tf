@@ -37,7 +37,7 @@ variable "location" {
 
 variable "location_short" {
   type        = string
-  description = "Location short like eg: neu, weu.."
+  description = "Location short like eg: neu, neu.."
 }
 
 variable "lock_enable" {

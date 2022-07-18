@@ -14,9 +14,9 @@ variable "env" {
   type = string
   validation {
     condition = (
-      length(var.env) <= 3
+      length(var.env) <= 4
     )
-    error_message = "Max length is 3 chars."
+    error_message = "Max length is 4 chars."
   }
 }
 
@@ -37,7 +37,7 @@ variable "location" {
 
 variable "location_short" {
   type        = string
-  description = "Location short like eg: neu, weu.."
+  description = "Location short like eg: neu, neu.."
 }
 
 variable "lock_enable" {
@@ -78,12 +78,6 @@ variable "external_domain" {
 }
 
 variable "prod_dns_zone_prefix" {
-  type        = string
-  default     = null
-  description = "The dns subdomain."
-}
-
-variable "lab_dns_zone_prefix" {
   type        = string
   default     = null
   description = "The dns subdomain."
@@ -202,14 +196,7 @@ locals {
   vnet_resource_group_name = "${local.project}-vnet-rg"
   vnet_name                = "${local.project}-vnet"
 
-  appgateway_public_ip_name = "${local.project}-gw-pip"
-  aks_public_ip_name        = "${local.project}-aksoutbound-pip"
-  bastion_public_ip_name    = "${local.project}-bastion-pip"
-
   prod_dns_zone_public_name = "${var.prod_dns_zone_prefix}.${var.external_domain}"
-  lab_dns_zone_public_name  = "${var.lab_dns_zone_prefix}.${var.external_domain}"
-  dns_zone_private_name     = "internal.${var.prod_dns_zone_prefix}.${var.external_domain}"
-  dns_zone_lab_private_name = "internal.${var.lab_dns_zone_prefix}.${var.external_domain}"
 
   # ACR DOCKER
   docker_rg_name       = "${local.project}-dockerreg-rg"
